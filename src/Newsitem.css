@@ -1,0 +1,491 @@
+.card{
+    width: 20vw;
+    height: 30vw;
+    border-radius: 15px;
+    background: linear-gradient(173deg, rgba(255, 255, 255, 0.30) 0%, rgba(255, 255, 255, 0.10) 100%);
+    box-shadow: 0px 4px 50px 40px rgba(0, 0, 0, 0.23);
+    backdrop-filter: blur(25px);
+    position: relative;
+    text-align: center;
+}
+
+.card:hover{
+    background: transparent;
+}
+
+.navigate{
+    /* display: inline-block; */
+    position: absolute;
+    left: 50%;
+    top: 90%;
+    transform: translateX(-50%);
+    text-decoration: none;
+    width: 100px;
+    height: 30px;
+    border-radius: 10px;
+ background: linear-gradient(180deg, #FFF 0%, rgba(0, 85, 184, 0.00) 99.99%, rgba(255, 17, 17, 0.00) 100%);
+ box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+ text-align: center;
+ color: black;
+}
+
+.card h5 ,p{
+    color: white;
+}
+
+.card-text{
+    position: relative;
+    padding-top: 25px;
+}
+
+.card-body{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.cardTitle{
+    text-align: center;
+    height: 6vw;
+    overflow: hidden;
+}
+
+.card img{
+    width: 20vw;
+    height: 12vw;
+    border-radius: 15px;
+}
+
+.card-image{
+    width: 20vw;
+    height: 13vw;
+}
+
+.description{
+    height: 7vw;
+    overflow: hidden;
+}
+
+@media (max-width:1457px){
+  .card{
+    width:23vw;
+    height: 35vw;
+  }
+
+  .card img{
+    width: 23vw;
+    height: 15vw;
+  }
+
+  .card-image{
+    width: 23vw;
+    height: 15vw;
+  }
+
+  .cardTitle{
+    height: 8vw;
+  }
+  
+}
+
+@media (max-width:1300px){
+    .card{
+        height:37vw;
+    }
+    
+    .cardTitle{
+        height: 6vw;
+      }
+    
+    .description{
+        height: 10vw;
+    }
+
+}
+
+@media (max-width:1165px){
+    .card{
+        width: 30vw;
+        height: 37vw;
+
+    }
+
+    .card img,.card-image{
+        width: 30vw;
+        height: 15vw;
+      }
+
+}
+
+@media (max-width:1126px){
+    .description{
+        height: 11vw;
+    }
+
+    .cardTitle{
+        height: 7vw;
+    }
+
+    .card{
+        height: 41vw;
+    }
+
+    .card img,.card-image{
+        height: 17vw;
+    }
+}
+
+@media (max-width:1050px){
+    .card{
+        width: 33vw;
+        height: 43vw;
+    }
+
+    .card-image,.card img{
+        width: 33vw;
+    }
+
+    .cardTitle{
+        height: 8vw;
+    }
+}
+
+@media (max-width:950px){
+    .card{
+        height: 45vw;
+    }
+
+    .description{
+        height: 12vw;
+    }
+}
+
+@media (max-width:885px){
+    .card{
+        height: 47vw;
+    }
+
+    .cardTitle{
+        height: 9vw;
+    }
+
+    .description{
+        height: 13vw;
+    }
+}
+
+@media (max-width:815px){
+    .card{
+        height: 53vw;
+    }
+
+    .navigate{
+        width: 90px;
+        height: 45px;
+        font-size:0.9rem;
+    }
+
+    .card-image,.card img{
+        height: 20vw;
+    }
+
+    .description{
+        height: 15vw;
+    }
+
+}
+
+@media (max-width:788px){
+    .card{
+        height: 55vw;
+    }
+ 
+    .card-image,.card img{
+        height:20vw;
+    }
+
+    .description{
+        height: 17vw;
+    }
+
+
+}
+
+@media (max-width:776px){
+    .card{
+        width: 35vw;
+        height: 57vw;
+    }
+
+    .card-image,.card img{
+        width: 35vw;
+        height: 22vw;
+    }
+}
+
+@media (max-width:735px) {
+    .card{
+        height: 59vw;
+    }
+
+    .description{
+        height: 18vw;
+    }
+}
+
+@media (max-width:722px){
+    .card{
+        width: 37vw;
+    }
+
+    .card-image,.card img{
+        width: 37vw;
+    }
+}
+
+@media (max-width:696px){
+    .card{
+        height: 61vw;
+    }
+}
+
+@media (max-width:684px){
+    .card{
+        height: 63vw;
+    }
+
+    .cardTitle{
+        height: 11vw;
+    }
+
+    .description{
+        height: 20vw;
+    }
+    
+}
+
+@media (max-width:668px){
+    .card{
+        height: 65vw;
+    }
+
+    .description{
+        height: 22vw;
+    }
+    
+
+}
+
+@media (max-width:652px){
+    .card{
+        height: 66vw;
+    }
+}
+
+@media (max-width:587px){
+    .card{
+        width: 39vw;
+        height: 69vw;
+    }
+
+    .card-image,.card img{
+        width: 39vw;
+    }
+
+    .cardTitle{
+        height: 12vw;
+    }
+}
+
+@media (max-width:570px){
+    .card{
+        width: 49vw;
+        height: 71vw;
+        left: 2%;
+    }
+
+    .card-image,.card img{
+        width: 49vw;
+        height: 24vw;
+    }
+
+}
+
+@media (max-width:510px){
+    .card{
+        width: 57vw;
+        height: 77vw;
+    }
+
+    .card-image,.card img{
+        width: 57vw;
+        height: 28vw;
+    }
+
+    .cardTitle{
+        height: 13vw;
+    }
+}
+
+@media (max-width:450px){
+    .card{
+        height: 79vw;
+        box-shadow: 0px 4px 50px 40px rgba(122, 118, 118, 0.23);
+    }
+
+    .cardTitle{
+        height: 15vw;
+    }
+
+}
+
+@media (max-width:440px){
+    .card{
+        width: 59vw;
+        height: 81vw;
+    }
+
+    .card-image,.card img{
+        width: 59vw;
+        height: 29vw;
+    }
+}
+
+@media (max-width:410px){
+    .card{
+        width: 59vw;
+        height: 82vw;
+    }
+
+    .card-image,.card img{
+        width: 59vw;   
+ }
+
+ .navigate{
+    width: 108px;
+    height: 40px;
+    font-size:0.9rem;
+}
+
+
+}
+
+@media (max-width:382px){
+    .navigate{
+        width: 108px;
+        height: 38px;
+        font-size:0.8rem;
+    }
+
+    .card{
+        width: 61vw;
+        height: 84vw;
+    }
+
+    .card-image,.card img{
+        width: 61vw;   
+   }
+
+   .description{
+    height: 24vw;
+   }
+}
+
+@media (max-width:360px){
+    .card{
+        width: 63vw;
+        height: 86vw;
+    }
+
+    .card-image,.card img{
+        width: 63vw; 
+        height: 31vw;  
+   }
+
+   .description{
+    font-size: 0.9rem;
+   }
+}
+
+@media (max-width:352px){
+    .card{
+        width: 67vw;
+        height: 90vw;
+    }
+
+    .card-image,.card img{
+        width: 67vw; 
+        height: 33vw;  
+   }
+
+   .description{
+    height: 25vw;
+   }
+
+   .navigate{
+    width: 106px;
+    height: 36px;
+ }
+}
+
+@media (max-width:334px){
+    .card{
+        width: 75vw;
+        height: 93vw;
+    }
+
+    .card-image,.card img{
+        width: 75vw; 
+        height: 35vw;  
+   }
+
+   .navigate{
+    width: 104px;
+    height: 34px;
+ }
+
+}
+
+@media (max-width:300px){
+    .card{
+        width: 80vw;
+        height: 95vw;
+    }
+
+    .card-image,.card img{
+        width: 80vw; 
+        height: 35vw;  
+   }
+
+   .description{
+    height: 27vw;
+   }
+}
+
+
+@media (max-width:295px){
+    .card{
+        width: 83vw;
+        height: 98vw;
+    }
+
+    .card-image,.card img{
+        width: 83vw; 
+        height: 39vw;  
+   }
+}
+
+@media (max-width:286px){
+    .card{
+        width: 89vw;
+        height: 103vw;
+    }
+
+    .card-image,.card img{
+        width: 89vw; 
+        height: 41vw;  
+   }
+}
+
+
