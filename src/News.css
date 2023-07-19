@@ -9,7 +9,6 @@
   .newsBackground{
       width: 100vw;
       height: 100vh;
-      /* background: linear-gradient(#047dae,#e3e6e7 99%);; */
      background: linear-gradient(180deg, #10244D 18.35%, #0896CD 100%);
       background-repeat: no-repeat;
       background-size: cover;
