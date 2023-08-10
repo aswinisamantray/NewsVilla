@@ -18,12 +18,6 @@ const Newsitem=(props)=>{
         </div>
           <div className="description"> <p>{description}</p></div>
           <Link className='navigate'  target="_blank" rel="noreferrer" to={newsUrl} >Read More</Link>
-          {/* <p className="card-text">
-            <small className="text-body-secondary">
-              By {!author ? "unknown" : author} on{" "}
-              {new Date(date).toGMTString()}
-            </small>
-          </p> */}
         </div>
     );
   }

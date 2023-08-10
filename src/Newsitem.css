@@ -14,7 +14,6 @@
 }
 
 .navigate{
-    /* display: inline-block; */
     position: absolute;
     left: 50%;
     top: 90%;
@@ -182,7 +181,6 @@
 
     .navigate{
         width: 90px;
-        height: 45px;
         font-size:0.9rem;
     }
 
@@ -221,6 +219,10 @@
     .card-image,.card img{
         width: 35vw;
         height: 22vw;
+    }
+
+    .cardTitle h5{
+        font-size: 1rem;
     }
 }
 
@@ -338,6 +340,9 @@
         height: 15vw;
     }
 
+    .navigate{
+        top: 87%;
+    }
 }
 
 @media (max-width:440px){
@@ -349,6 +354,10 @@
     .card-image,.card img{
         width: 59vw;
         height: 29vw;
+    }
+
+    .description p{
+        font-size: smaller;
     }
 }
 
@@ -364,7 +373,6 @@
 
  .navigate{
     width: 108px;
-    height: 40px;
     font-size:0.9rem;
 }
 
@@ -373,8 +381,6 @@
 
 @media (max-width:382px){
     .navigate{
-        width: 108px;
-        height: 38px;
         font-size:0.8rem;
     }
 
@@ -425,7 +431,6 @@
 
    .navigate{
     width: 106px;
-    height: 36px;
  }
 }
 
@@ -442,7 +447,6 @@
 
    .navigate{
     width: 104px;
-    height: 34px;
  }
 
 }

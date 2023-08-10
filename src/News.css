@@ -54,6 +54,7 @@
      border-radius: 60px;
      width: 30vw;
      height: var(--height);
+     z-index: 2;
   }
   
   .search-bar input{
@@ -64,17 +65,7 @@
     font-size:1rem;
     padding-left:3vw;
   }
-  
-  .search-bar button{
-    /* position: absolute; */
-    background: transparent;
-  }
-  
-  .search-bar button img{
-    /* position: absolute; */
-    background: transparent;
-  }
-  
+    
   #write{
     top: 18%;
     position: absolute;
@@ -98,6 +89,10 @@
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size:1.5rem;
   }
+
+  input[type="text"] {
+    color: white; 
+}
   
   .cardContainer{
     position: absolute;
@@ -105,6 +100,7 @@
     top:30%;
     background: transparent;
     overflow: auto;
+    z-index:1;
   }
   .cardContainer h2{
     text-align: center;
@@ -117,12 +113,10 @@
     width: 100vw;
     height: 100vh;
     justify-content: center;
-    /* align-items: center; */
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    /* margin: auto; */
-    /* left: 1%; */
+    
   }
   
   .card-design{
@@ -171,13 +165,7 @@
       right: 2.5%;
     }
   }
-  
-  @media (max-width:1200px){
-    .search-bar button img{
-      width: 3vw;
-      left: 20vw;
-    }
-   }
+
   
    @media (max-width:1165px){
     .card-design{
@@ -228,10 +216,9 @@
   
   @media (max-width:940px){
     .search-bar{
-      top:17%;
+      top:20%;
       flex-direction: row;
       width: 35vw;
-      left: 52%;
     }
   
     .footer{
@@ -264,23 +251,12 @@
   }
   
   @media (max-width:810px){
-    /* .newsContainer{
-      width:107vw;
-    } */
-    
     .newsBackground{
       height: 110vh;
-      /* width: 110vw; */
     }
   
     .search-bar{
       width: 37vw;
-      left: 54%;
-    }
-  
-    .cards{
-      position: relative;
-      left: 3.5%;
     }
     
   }
@@ -351,7 +327,6 @@
   @media (max-width:668px){
     .cards{
       width: 100%;
-      left: 0.4%;
     }
   
     .footer{
@@ -361,7 +336,7 @@
   
   @media (max-width:654px){
     .search-bar{
-      top: 13%;
+      top: 20%;
       width: 45vw;
     }
   }
@@ -452,7 +427,6 @@
   
   @media (max-width:486px){
     .newsBackground{
-      /* width: 110vw; */
       min-height: 105vh;
     }
   
@@ -527,11 +501,6 @@
       height:11vw;
     }
   
-    .search-bar button img{
-      width: 4vw;
-      left: 23vw;
-    }
-  
     #write{
       width: 9vw;
       z-index:6;
@@ -547,10 +516,6 @@
     #path{
       font-size: 1.1rem;
     }
-  
-    /* .newsContainer{
-      width: 110vw;
-    } */
   
     .footer{
       margin-top: 67vw;
@@ -597,11 +562,6 @@
     ::placeholder{
       font-size: 0.8rem;
     }
-  
-    /* .newsBackground,.newsContainer{
-      width:114vw;
-    }
-     */
   
      .footer{
       margin-top: 78vw;

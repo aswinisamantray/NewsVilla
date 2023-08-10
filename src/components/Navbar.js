@@ -1,6 +1,10 @@
 import React, {useState}from 'react'
 import { Link } from 'react-router-dom';
+import { useDispatch } from 'react-redux';
+
 const NavBar=()=>{
+  const dispatch = useDispatch();
+
   const [input,setInput]=useState('');
   function titleChange(event) {
     const input=event.target.value;
@@ -9,14 +13,14 @@ const NavBar=()=>{
 
     return (
       <>
-      <div>
+      {/* <div> */}
           <nav className="navbar fixed-top navbar-expand-lg bg-dark navbar-dark">
         <div className="container-fluid">
             <Link className="navbar-brand" to="/general">NewsVilla</Link>
-            <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="/navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
               <span className="navbar-toggler-icon"></span>
             </button>
-            <div className="collapse navbar-collapse" id="navbarNavDropdown">
+            <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav">
                 <li className="nav-item">
                 <Link className="nav-link active" aria-current="page" to="/general">Home</Link>
@@ -35,9 +39,9 @@ const NavBar=()=>{
                 </li>
             </ul>
             </div>
-        </div>
+         </div>
         </nav>
-      </div>
+      {/* </div> */}
       </>
     )
   }
