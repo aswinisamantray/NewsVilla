@@ -7,6 +7,7 @@ import PropTypes from 'prop-types'
 const News =(props)=>{
 
   const apikey=process.env.REACT_APP_API_KEY;
+  console.log(apikey);
   // const apikey='11af2377a2834cb0915b6669c7e6d6eb';
   const [articles, setArticles]=useState([])
   const [loading, setLoading]=useState(true)
