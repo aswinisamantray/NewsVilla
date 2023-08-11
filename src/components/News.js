@@ -29,6 +29,7 @@ const News =(props)=>{
       const url=`https://newsapi.org/v2/top-headlines?country=${props.country}&category=${props.category}&apiKey=${apikey}&page=${page}&pageSize=${pageSize}&sortBy=popularity`;
       let data = await fetch(url);
       let parsedData= await data.json();
+      console.log(parsedData);
       allArticles = [...allArticles,...parsedData.articles];
       setArticles(allArticles);
       setTotalResults(parsedData.totalResults);
